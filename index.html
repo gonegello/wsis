@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title> Drop Down Sidebar Menu | CodingLab </title>
+    <link rel="stylesheet" href="assets/bootstrap/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/nav.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/dashboard.css">
+    
+     <!-- Boxiocns CDN Link -->
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+
+<body>
+<!--Side bar-->
+<div class="sidebar close">
+  <div class="logo-details">
+    <i class='bx bx-menu' id="btn"></i>
+  </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Category</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Category</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Category</a></li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP & MySQL</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Posts</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Form</a></li>
+          <li><a href="#">Card Design</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug' ></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="image/avoex.jpg" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Prem Shahi</div>
+        <div class="job">Web Desginer</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+</div>
+<!--end of sidebar-->
+
+
+  <section class="home-section">
+    <!-- nav tool bar top-->
+    <div class="navbar">
+      <a href="#additems" title="Add Items"><i class='bx bx-list-plus' style="font-size:20px;"></i></a>
+      <a href="#additems" title="Category"><i class='bx bx-category-alt'></i></a>
+      <a href="#darkmode" title="Darkmode"><i class='bx bx-moon'></i></a>
+      <a href="#adduser" title="Unit"><i class='bx bx-columns'></i></a>
+      <a href="#adduser" title="Add User"><i class='bx bx-user-plus' style="font-size:20px;"></i></a>   
+    </div>
+
+    <!--end of nav tool bar top-->
+    
+    
+    <div class="home-content">
+      <span class="text"></span>
+    </div>
+
+
+    <div class="container-fluid">
+      <!---->
+      <div class="card shadow">
+          <div class="card-header py-3">
+              <span style="font-size: 20px; color:white;"><i class='bx bx-category'></i>  Dashboard</span>
+              
+          </div>
+  
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-md-6 text-nowrap">
+                      <div id="dataTable_length-1" class="dataTables_length" aria-controls="dataTable"></div>
+                      <div class="card">
+                        
+                      </div>
+                  </div>
+              </div>
+
+              <!--Stock Card-->
+              <div class="row">
+                  <div class="col">
+                      <div class="card">
+                          <div class="card-body"> 
+                              <i class="bx bx-notepad"></i>
+                              <h4 class="card-title">Total Items</h4>
+                              <h6 class="text-muted card-subtitle mb-2">Monitor item conditions in stock card.</h6>
+                              <p class="card-text">0</p>
+                              <a class="card-link" href="#">Link</a>
+                                </div>
+                               
+                      </div>
+                  </div>
+                  <!--Stock Card-->
+                  
+
+                  <div class="col">
+                      <div class="card">
+                          <div class="card-body">
+                           <i class="bx bx-box"></i> 
+                              <h4 class="card-title">Stock In</h4>
+                              <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                              <p class="card-text">0</p><a class="card-link" href="#">Link</a></div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card">
+                          <div class="card-body">
+                            <i class="bx bx-layer-minus"></i>
+                              <h4 class="card-title">Stock Out</h4>
+                              <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                              <p class="card-text">0</p><a class="card-link" href="#">Link</a></div>
+                      </div>
+                  </div>
+
+                  <div class="col">
+                      <div class="card">
+                          <div class="card-body">
+                            <i class="bx bx-calendar-check"></i>
+                              <h4 class="card-title">Available Stock</h4>
+                              <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                              <p class="card-text">0</p><a class="card-link" href="#">Link</a>
+                      </div>
+                  </div>
+                  
+              </div>
+              
+      </div>
+  </section>
+
+
+
+  
+
+ <!-- scripts-->
+ <script src="assets/js/script.js"></script>
+  
+
+</body>
+</html>

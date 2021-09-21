@@ -1,0 +1,72 @@
+/* div container fluid*/
+.container-fluid{
+    background: white;
+    margin-left: 2%;
+    margin-right: 1%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    box-shadow: 1px 1px 4px 2px rgb(228, 227, 227);
+}
+/* card header*/
+.card-header{
+padding: 20px 16px;
+background: #cbd5df;
+border-radius: 20px;
+border-bottom: 1px solid rgb(238, 237, 237);
+}
+/* card body*/
+.card-body{
+    margin:10px;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.row{
+    display: flex;
+    flex-wrap:wrap;
+    margin-right: -.75rem;
+    margin-left: -.75rem;
+}
+
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.row .col .card{
+    border:1px solid rgb(238, 236, 236);
+    margin: 8px;
+    border-radius: .25rem;
+}
+.row .col .card .card-body i{
+    color:rgb(192, 187, 187);
+    font-size: 65px;   
+}
+.row .col .card .card-body{
+    text-align: center;
+    color:rgb(41, 40, 40);
+}
+.row .col .card .card-body .text-muted{
+    font-style: italic;
+    color:#cbd5df;
+    font-family: century gothic;
+}
+.card-text{
+    
+    margin-top:3px;
+    font-size: 40px;
+    font-family: century gothic;
+}
+.card-link{
+    padding:10px 20px;
+    margin-top: 10px;
+    
+}
+.card-title{
+    margin-top: 15px;
+}
+
+
+

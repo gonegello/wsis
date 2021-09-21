@@ -1,0 +1,46 @@
+
+.navbar {
+    margin-left: 30%;
+      overflow: hidden;
+      background-color:white;
+      position: fixed;
+      top: 0;
+      width: 16%;
+      padding-top:8px;
+      padding-bottom:8px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 1px 1px 4px 2px rgb(228, 227, 227);
+      
+      
+      
+    }
+    
+    .navbar a {
+      display: inline;
+      color: #f2f2f2;
+      text-align: center;
+      padding:14px 10px;
+      text-decoration: none;
+      font-size: 17px;
+      margin:0;
+      color:rgb(40, 40,40);
+    }
+    
+    .navbar a:hover {
+      background:rgb(176,143,72);
+      border-radius: 100%;
+      color:white;
+    }
+
+    .navbar a:focus{
+        background-color: rgb(176,143,72);
+        border-radius: 100%;
+      color:white;
+    }
+    
+    .main {
+      padding: 16px;
+      margin-top: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
