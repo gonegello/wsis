@@ -16,11 +16,16 @@
   background:white;
   z-index: 100;
   transition: all 0.5s ease;
-  box-shadow: 1px 1px 4px 2px rgb(228, 227, 227);
+
 }
+
 .sidebar.close{
   width: 78px;
+  opacity: 1  ;
+
 }
+
+
 .sidebar .logo-details{
   height: 60px;
   display: flex;
@@ -73,7 +78,14 @@
 }
 /* icon sidebar background */
 .sidebar .nav-links li:hover{
-  background:rgb(176,143,72);
+  background:rgb(204, 203, 202);
+  opacity: 1;
+  
+  
+}
+.sidebar.close .nav-links li i:hover{
+  
+  opacity:none;
   
   
 }
@@ -111,14 +123,6 @@ li{
   
 }
 
-
-.sidebar .nav-links li.showMenu i.arrow{
-  transform: rotate(-180deg);
-}
-.sidebar.close .nav-links i.arrow{
-  display: none;
-  
-}
 .sidebar .nav-links li a{
   display: flex;
   align-items: center;
@@ -130,11 +134,11 @@ li{
   font-size: 18px;
   font-weight: 400;
   color:rgb(40,40,40);
-  transition: all 0.4s ease;
+  /*transition: all 0.4s ease;*/
   
 }
 .sidebar .nav-links li a .link_name:hover{
-  color:white;
+  color:black;
 }
 
 .sidebar.close .nav-links li a .link_name{
@@ -145,11 +149,11 @@ li{
 .sidebar .nav-links li .sub-menu{
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
-  background: rgb(176,143 , 72);
-  display: none;
-  color:white;
+  background: rgb(204, 203, 202);
 }
-
+.sidebar .nav-links li .sub-menu .link_name{
+ color: black;
+}
 
 
 .sidebar .nav-links li.showMenu .sub-menu{
@@ -199,7 +203,7 @@ li{
   display: block;
 }
 .sidebar .nav-links li .sub-menu.blank{
-  opacity: 1;
+ outline: none;
   pointer-events: auto;
   padding: 3px 20px 6px 16px;
   opacity: 0;

@@ -1,0 +1,28 @@
+.nav-item .nav-link{
+  width:  100%;
+  color: rgb(66, 66, 66);
+  outline: none;
+  border: none;
+}
+
+
+.nav-item{
+  border: none;
+  outline: none;
+}
+
+
+body{
+  margin: 0;
+}
+.tab-content{
+  border: none;
+  outline: none;
+ 
+}
+.container tab-pane active{
+  margin: 0;
+  border: none;
+  outline: none;
+
+}

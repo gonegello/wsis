@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
   <head>
     <meta charset="UTF-8">
-    <title> Drop Down Sidebar Menu | CodingLab </title>
+    <title> Dashboard</title>
+    
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="assets/bootstrap/css/style.css">
     <link rel="stylesheet" href="assets/bootstrap/css/nav.css">
     <link rel="stylesheet" href="assets/bootstrap/css/dashboard.css">
     
+    
      <!-- Boxiocns CDN Link -->
      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+  </head>
 
 
 <body>
+
 <!--Side bar-->
 <div class="sidebar close">
   <div class="logo-details">
@@ -22,29 +26,41 @@
   </div>
     <ul class="nav-links">
       <li>
+        <!--close and view side bar-->
         <a href="#">
           <i class='bx bx-grid-alt' ></i>
           <span class="link_name">Dashboard</span>
         </a>
+
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Category</a></li>
+          <li><a class="link_name" href="index.html">Dashboard</a></li>
         </ul>
+        
       </li>
+
       <li>
+        <!--end close and view side bar icon-->
+
+        <!--Stock room-->
+
         <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-collection' ></i>
-            <span class="link_name">Category</span>
+          <a href="stockroom.html">
+            <i class='bx bx-store'></i>
+            <span class="link_name">Stockroom</span>
           </a>
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Category</a></li>
-          <li><a href="#">HTML & CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">PHP & MySQL</a></li>
+          <li><a class="link_name" href="stockroom.html">Stockroom</a></li>
+          <li><a href="stockroom.html">Stocks</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#"></a>Units</li>
         </ul>
       </li>
+      <!--end stock room-->
+
+
+
       <li>
         <div class="iocn-link">
           <a href="#">
@@ -60,6 +76,7 @@
           <li><a href="#">Card Design</a></li>
         </ul>
       </li>
+
       <li>
         <a href="#">
           <i class='bx bx-pie-chart-alt-2' ></i>
@@ -69,6 +86,7 @@
           <li><a class="link_name" href="#">Analytics</a></li>
         </ul>
       </li>
+
       <li>
         <a href="#">
           <i class='bx bx-line-chart' ></i>
@@ -79,6 +97,7 @@
         </ul>
       </li>
       <li>
+
         <div class="iocn-link">
           <a href="#">
             <i class='bx bx-plug' ></i>
@@ -86,6 +105,7 @@
           </a>
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
+
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Plugins</a></li>
           <li><a href="#">UI Face</a></li>
@@ -93,6 +113,7 @@
           <li><a href="#">Box Icons</a></li>
         </ul>
       </li>
+
       <li>
         <a href="#">
           <i class='bx bx-compass' ></i>
@@ -100,8 +121,9 @@
         </a>
         <ul class="sub-menu blank">
           <li><a class="link_name" href="#">Explore</a></li>
-        </ul>
+        </ul> 
       </li>
+
       <li>
         <a href="#">
           <i class='bx bx-history'></i>
@@ -111,6 +133,7 @@
           <li><a class="link_name" href="#">History</a></li>
         </ul>
       </li>
+
       <li>
         <a href="#">
           <i class='bx bx-cog' ></i>
@@ -120,20 +143,23 @@
           <li><a class="link_name" href="#">Setting</a></li>
         </ul>
       </li>
+
       <li>
     <div class="profile-details">
       <div class="profile-content">
         <img src="image/avoex.jpg" alt="profileImg">
       </div>
       <div class="name-job">
-        <div class="profile_name">Prem Shahi</div>
-        <div class="job">Web Desginer</div>
+        <div class="profile_name">avoex</div>
+        <div class="job">Web Designer</div>
       </div>
-      <i class='bx bx-log-out' ></i>
+      <i class='bx bx-log-out'></i>
     </div>
   </li>
+
 </ul>
 </div>
+
 <!--end of sidebar-->
 
 
@@ -154,82 +180,116 @@
       <span class="text"></span>
     </div>
 
-
-    <div class="container-fluid">
-      <!---->
-      <div class="card shadow">
-          <div class="card-header py-3">
-              <span style="font-size: 20px; color:white;"><i class='bx bx-category'></i>  Dashboard</span>
-              
-          </div>
-  
-          <div class="card-body">
-              <div class="row">
-                  <div class="col-md-6 text-nowrap">
-                      <div id="dataTable_length-1" class="dataTables_length" aria-controls="dataTable"></div>
-                      <div class="card">
-                        
-                      </div>
-                  </div>
-              </div>
-
-              <!--Stock Card-->
-              <div class="row">
-                  <div class="col">
-                      <div class="card">
-                          <div class="card-body"> 
-                              <i class="bx bx-notepad"></i>
-                              <h4 class="card-title">Total Items</h4>
-                              <h6 class="text-muted card-subtitle mb-2">Monitor item conditions in stock card.</h6>
-                              <p class="card-text">0</p>
-                              <a class="card-link" href="#">Link</a>
-                                </div>
-                               
-                      </div>
-                  </div>
-                  <!--Stock Card-->
-                  
-
-                  <div class="col">
-                      <div class="card">
-                          <div class="card-body">
-                           <i class="bx bx-box"></i> 
-                              <h4 class="card-title">Stock In</h4>
-                              <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
-                              <p class="card-text">0</p><a class="card-link" href="#">Link</a></div>
-                      </div>
-                  </div>
-                  <div class="col">
-                      <div class="card">
-                          <div class="card-body">
-                            <i class="bx bx-layer-minus"></i>
-                              <h4 class="card-title">Stock Out</h4>
-                              <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
-                              <p class="card-text">0</p><a class="card-link" href="#">Link</a></div>
-                      </div>
-                  </div>
-
-                  <div class="col">
-                      <div class="card">
-                          <div class="card-body">
-                            <i class="bx bx-calendar-check"></i>
-                              <h4 class="card-title">Available Stock</h4>
-                              <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
-                              <p class="card-text">0</p><a class="card-link" href="#">Link</a>
-                      </div>
-                  </div>
-                  
-              </div>
-              
+ <!-- Container fluid Dashboard-->
+ <div class="container-fluid">
+ 
+  <div class="card shadow">
+     <!--Card header-->
+      <div class="card-header py-3">
+          <span style="font-size: 20px; color:white;"><i class='bx bx-category'></i>  Dashboard</span>   
       </div>
+
+      <div class="card-body">
+          <div class="row">
+              <div class="col-md-6 text-nowrap">
+                  <div id="dataTable_length-1" class="dataTables_length" aria-controls="dataTable"></div>
+                  <div class="card">
+                  </div>
+              </div>
+          </div>
+
+          <!--Total Items Card-->
+          <div class="row">
+              <div class="col">
+                  <div class="card">
+                      <div class="card-body"> 
+                          <i class="bx bx-notepad"></i>
+                          <h4 class="card-title">Total Items</h4>
+                         <h6 class="text-muted card-subtitle mb-2">Monitor item conditions in stock card.</h6>
+                          <p class="card-text">0</p>
+                          
+                      </div>    
+                  </div>
+              </div>
+              <!-- End Total Items Card-->
+              
+              <!--Stock In Card-->
+              <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                       <i class="bx bx-box"></i> 
+                          <h4 class="card-title">Stock In</h4>
+                          <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                          <p class="card-text">0</p>
+                        </div>
+                  </div>
+              </div>
+              <!--End Stock In card-->
+
+              <!--Stock Out Card-->
+              <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                        <i class="bx bx-layer-minus"></i>
+                          <h4 class="card-title">Stock Out</h4>
+                          <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                          <p class="card-text">0</p>
+                        </div>
+                  </div>
+              </div>
+              <!--End Stock Out Card-->
+
+              <!--Available stock card-->
+              <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                        <i class="bx bx-calendar-check"></i>
+                          <h4 class="card-title">Available Stock</h4>
+                          <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                          <p class="card-text">0</p>
+                  </div>
+              </div>
+          </div>
+          <!--End available stock card-->
+          
+
+          <!--Available stock card-->
+          <div class="col">
+            <div class="card">
+                <div class="card-body">
+                  <i class="bx bx-user"></i>
+                    <h4 class="card-title">Admin</h4>
+                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                    <p class="card-text">3</p>
+            </div>
+        </div>
+    </div>
+    <!--End available stock card-->
+
+          <!--User account card-->
+          <div class="col">
+            <div class="card">
+                <div class="card-body">
+                  <i class="bx bx-user-pin"></i>
+                    <h4 class="card-title">Clients</h4>
+                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                    <p class="card-text">0</p><br>
+                   <i class='bx bx-link-external'></i> <span style="font-size: 10px; color:blue;">Accounts</span> 
+            </div>
+        </div>
+    </div>
+    <!--End user account card-->
+
+
+    
+  </div>
+  <!--End container fluid dashboard-->
+            
   </section>
-
-
-
-  
 
  <!-- scripts-->
  <script src="assets/js/script.js"></script>
+ 
   
 
 </body>
