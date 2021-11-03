@@ -1,3 +1,7 @@
+<?php 
+session_start();?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -25,14 +29,27 @@
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4"><strong>Sign In Account</strong></h4>
                                     </div>
-                                    <form class="user">
-                                        <div class="form-group"><input class="form-control form-control-user" type="text" required="" placeholder="Enter username.."></div>
-                                        <div class="form-group"><input class="form-control form-control-user" type="password" id="exampleInputPassword" placeholder="Password" name="password" required=""></div>
+                                        <!-- login Form-->
+                                    <form class="user" action="login.php" method="post">
+                                        <div class="form-group">
+                                            <!--Enter username -->
+                                            <input class="form-control form-control-user" type="text" required="" name="username" placeholder="Enter username..">
+                                        </div>
+                                        <div class="form-group">
+                                            <!--Enter Password -->
+                                            <input class="form-control form-control-user" type="password" id="exampleInputPassword" name="password" placeholder="Password" name="password" required="">
+                                        </div>
                                         <div class="form-group" id="check-box-group">
                                             <div class="text-left custom-control custom-checkbox small" id="div-checkbox">
-                                                <div class="form-check text-left form-check-admin"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1"><label class="form-check-label custom-control-label" for="formCheck-1">Show Password</label></div>
+                                                <div class="form-check text-left form-check-admin">
+                                                    <!--Show Password -->
+                                                    <input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1" onclick="showPassword()">
+                                                    <label class="form-check-label custom-control-label" for="formCheck-1">Show Password</label></div>
                                             </div>
-                                        </div><button class="btn btn-primary btn-block text-white btn-user" type="submit">Sign In Account</button></form>
+                                        </div>
+                                        <button class="btn btn-primary btn-block text-white btn-user" type="submit">Sign In Account</button>
+                                    </form>
+                                    <!-- end of Login Form-->
                                     <div class="text-center"></div>
                                     <div class="text-center"></div>
                                 </div>
@@ -50,6 +67,18 @@
     <script src="assets/bootstrap/js/login.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/jtheme.js"></script>
+     <!--Js function for show password  -->
+     <script>
+     function showPassword() {
+  var x = document.getElementById("exampleInputPassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+</script>
 </body>
 
 </html>

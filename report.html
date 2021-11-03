@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="assets/bootstrap/css/tab.css">
     <link rel="stylesheet" href="assets/bootstrap/css/stockroom.css">
     <link rel="stylesheet" href="assets/bootstrap/css/table.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/forms.css">
 
     
      <!-- Boxiocns CDN Link -->
@@ -140,29 +139,20 @@
     </div>
 
     <!--end of nav tool bar top-->
+    <div class="home-content">
+      <span class="text"></span>
+    </div>
 
  <!-- Container fluid Dashboard-->
  <div class="container-fluid">
-  <div class="card-shadow" style="margin-top: 12px;">
+ <br><br>
+  <div class="card-shadow">
      <!--Card header-->
       <div class="card-header py-3">
-          <span style="font-size: 20px; color: rgb(40, 40, 40);"><i class='bx bx-store'></i>  Stockroom</span>   
+          <span style="font-size: 20px; color: rgb(40, 40, 40);"><i class='bx bxs-report'></i>  Record</span>   
       </div>
 
       <div class="card-body">
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs nav-justified" id="tabby" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" href="#stock" id="stck" role="tab" data-toggle="tab" onclick="stockBttm()"><i class='bx bx-box' id="s-i"></i><br><p id="s-p">Stock</p></a>
-            </li>
-            
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#category"  id="cat" role="tab" data-toggle="tab" onclick="catBttm()"><i class='bx bx-category' id="c-i"></i><br><p id="c-p">Category</p></a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#unit" id="unt" role="tab" data-toggle="tab" onclick="unitBttm()"><i class='bx bx-collection' id="u-i"></i><br><p id="u-p">Unit</p></a>
-            </li>
-          </ul>
         
           <!-- Tab panes -->
           <div class="tab-content">
@@ -170,16 +160,11 @@
             
 
             <!-- Stock Tab pane-->
-            <div id="stock" class="tab-pane active" role="tabpanel">
-           
-                <!--search bar in manage items tab pane-->
-                <input type="text" class="searchbar" id="search_stock"  placeholder="Search..">
-             
+            <div id="stock" class="tab-pane active" role="tabpanel"><br>
              <!-- Stock Table-->
              <table class="table">
               <thead>
                 <tr>
-                  <th></th>
                   <th>Stock ID</th>
                   <th>Stock Name</th>
                   <th>Quantity</th>
@@ -187,23 +172,10 @@
                   <th>Type</th>
                   <th>Date Arrived</th>
                   <th>Remarks</th>
-
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><input type="checkbox" class="form-check-input"></td>
-                  <td>no data</td>
-                  <td>no data</td>
-                  <td>no data</td>
-                  <td>no data</td>
-                  <td>no data</td>
-                  <td>no data</td>
-                  <td>no data</td>
-                 
-                </tr>
-                <tr>
-                  <td><input type="checkbox" class="form-check-input"></td>
                   <td>no data</td>
                   <td>no data</td>
                   <td>no data</td>
@@ -213,7 +185,15 @@
                   <td>no data</td>
                 </tr>
                 <tr>
-                  <td><input type="checkbox" class="form-check-input"></td>
+                  <td>no data</td>
+                  <td>no data</td>
+                  <td>no data</td>
+                  <td>no data</td>
+                  <td>no data</td>
+                  <td>no data</td>
+                  <td>no data</td>
+                </tr>
+                <tr>
                   <td>no data</td>
                   <td>no data</td>
                   <td>no data</td>
@@ -226,8 +206,8 @@
             </table>
             </div>
             <!-- Category Tab pane-->
-            <div id="category" class="tab-pane" role="tabpanel">
-              <input type="text" class="searchbar" id="search_stock"  placeholder="Search..">
+            <div id="category" class="tab-pane" role="tabpanel"><br>
+              <h3>Category</h3>
               <table class="table">
                 <thead>
                   <tr>
@@ -273,9 +253,8 @@
             </div>
 
             <!-- Unit Tab pane-->
-            <div id="unit" class="tab-pane" role="tabpanel">
-                <!--search bar in manage items tab pane-->
-                <input type="text" class="searchbar" id="search_stock"  placeholder="Search.."> 
+            <div id="unit" class="tab-pane" role="tabpanel"><br>
+              <h3>Unit</h3>
               <table class="table">
                 <thead>
                   <tr>

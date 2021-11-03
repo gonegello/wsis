@@ -1,13 +1,8 @@
 
 .navbar {
-  margin-left: 30%;
-  overflow: hidden;
   background-color:white;
-  position: fixed;
+  border-bottom: 1px solid rgb(230, 227, 227);
 
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 1px 1px 4px 2px rgb(228, 227, 227);
   
 }
 
@@ -15,26 +10,16 @@
   display: inline;
   color: #f2f2f2;
   text-align: center;
-  padding:8px 10px;
-  padding-right: 5%;
-  text-decoration: none;
-  font-size: 17px;
-  margin:-6%;
-  margin-left: -12%;
-  margin-right: -12%;
-  margin-bottom: -8%;
   color:rgb(40, 40,40);
 }
 
 .navbar a:hover {
   background:rgb(204, 203, 202);
-  
   color:black;
 }
 
 .navbar a:focus{
-    background-color: rgb(204, 203, 202);
-    
+    background-color: rgb(204, 203, 202); 
   color: black;
 }
 

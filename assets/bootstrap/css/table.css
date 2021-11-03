@@ -1,0 +1,22 @@
+.table{
+    font-size: 12px;
+    border:1px solid rgb(226, 226, 226);
+   
+}
+
+
+thead{
+border-top:none;
+
+}
+th{
+    border-top: none;
+    color:black;
+    font-weight: normal;
+    outline: none;
+}
+.table th{
+
+    border-top: none;
+   border-bottom: none;
+}

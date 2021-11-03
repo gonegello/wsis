@@ -16,15 +16,30 @@
   background:white;
   z-index: 100;
   transition: all 0.5s ease;
+  border-right: 1px solid rgb(224, 224, 224);
+  
 
+}
+
+.sidebar li{
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  margin-right: 7%;
+}
+.sidebar.close li{
+ border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
 }
 
 .sidebar.close{
   width: 78px;
   opacity: 1  ;
+  box-shadow: 1px 1px 4px 0px rgb(228,227,227);
+  border: none;
+  
 
 }
-
 
 .sidebar .logo-details{
   height: 60px;
@@ -100,10 +115,9 @@
   
 }
 
-
+/* white line between icon */
 li{
-
-  border-top: 1px solid whitesmoke;
+  
 }
 
 .sub-menu li{
@@ -131,10 +145,10 @@ li{
   
 }
 .sidebar .nav-links li a .link_name{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
-  color:rgb(40,40,40);
-  /*transition: all 0.4s ease;*/
+  color:rgb(56, 56, 56);
+  
   
 }
 .sidebar .nav-links li a .link_name:hover{
@@ -300,8 +314,31 @@ li{
     display: none;
   }
 }
-
-
+/* MODAL CSS */
+/* para matangtang ag background bluur */
 .modal-backdrop {
-  background: none;
+  display:none;
+}
+.modal-open .modal {
+  width: 700px;
+  margin: 0 auto;
+  margin-left: 50%;
+  margin-top: 20%;
+}
+.modal-header{
+  background-color: rgb(204, 203, 202);
+}
+.close:focus {
+  outline: 0;
+  border: 0px solid #fff;
+  outline: none;
+}
+#addtype{
+  margin-bottom: 3px;
+  width: 80%;
+}
+#buttonPlus{
+ margin-left: 90%;
+ margin-top: -15%;
+ margin-bottom: 0%;
 }

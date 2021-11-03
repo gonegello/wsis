@@ -1,11 +1,11 @@
 
   function stockBttm(){
-    document.getElementById("stck").style.borderBottom = "3px solid #4c8bf5";
+    document.getElementById("stck").style.borderBottom = "3px solid #1083ff";
     document.getElementById("cat").style.borderBottom = "none";
     document.getElementById("unt").style.borderBottom = "none";
 
-    document.getElementById("s-i").style.color = "#4c8bf5";
-    document.getElementById("s-p").style.color = "#4c8bf5";
+    document.getElementById("s-i").style.color = "#1083ff";
+    document.getElementById("s-p").style.color = "#1083ff";
 
     document.getElementById("c-i").style.color = "rgb(40,40,40)";
     document.getElementById("c-p").style.color = "rgb(40,40,40)";
@@ -27,12 +27,12 @@
 
   }
   function catBttm(){
-    document.getElementById("cat").style.borderBottom = "3px solid #4c8bf5";
+    document.getElementById("cat").style.borderBottom = "3px solid #1083ff";
     document.getElementById("stck").style.borderBottom = "none";
     document.getElementById("unt").style.borderBottom = "none";
 
-    document.getElementById("c-i").style.color = "#4c8bf5";
-    document.getElementById("c-p").style.color = "#4c8bf5";
+    document.getElementById("c-i").style.color = "#1083ff";
+    document.getElementById("c-p").style.color = "#1083ff";
 
     document.getElementById("s-i").style.color = "rgb(40,40,40)";
     document.getElementById("s-p").style.color = "rgb(40,40,40)";
@@ -50,12 +50,12 @@
 
   }
   function unitBttm(){
-    document.getElementById("unt").style.borderBottom = "3px solid #4c8bf5";
+    document.getElementById("unt").style.borderBottom = "3px solid #1083ff";
     document.getElementById("stck").style.borderBottom = "none";
     document.getElementById("cat").style.borderBottom = "none";
 
-    document.getElementById("u-i").style.color = "#4c8bf5";
-    document.getElementById("u-p").style.color = "#4c8bf5";
+    document.getElementById("u-i").style.color = "#1083ff";
+    document.getElementById("u-p").style.color = "#1083ff";
 
     document.getElementById("s-i").style.color = "rgb(40,40,40)";
     document.getElementById("s-p").style.color = "rgb(40,40,40)";
